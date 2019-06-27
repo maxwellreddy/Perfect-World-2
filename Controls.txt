@@ -1,0 +1,4 @@
+Controls:
+Z: Slow movement/Start game
+X: Shoot
+C: Bomb
