@@ -1,0 +1,140 @@
+[gd_scene load_steps=35 format=1]
+
+[ext_resource path="res://Game Over Scene/Game Over Screen.gd" type="Script" id=1]
+[ext_resource path="res://Game Over Scene/Improved Game Over Background.png" type="Texture" id=2]
+[ext_resource path="res://Game Over Scene/G1.png" type="Texture" id=3]
+[ext_resource path="res://Game Over Scene/G2.png" type="Texture" id=4]
+[ext_resource path="res://Game Over Scene/G3.png" type="Texture" id=5]
+[ext_resource path="res://Game Over Scene/A1.png" type="Texture" id=6]
+[ext_resource path="res://Game Over Scene/A2.png" type="Texture" id=7]
+[ext_resource path="res://Game Over Scene/A3.png" type="Texture" id=8]
+[ext_resource path="res://Game Over Scene/M1.png" type="Texture" id=9]
+[ext_resource path="res://Game Over Scene/M2.png" type="Texture" id=10]
+[ext_resource path="res://Game Over Scene/M3.png" type="Texture" id=11]
+[ext_resource path="res://Game Over Scene/E1.png" type="Texture" id=12]
+[ext_resource path="res://Game Over Scene/E2.png" type="Texture" id=13]
+[ext_resource path="res://Game Over Scene/E3.png" type="Texture" id=14]
+[ext_resource path="res://Game Over Scene/O1.png" type="Texture" id=15]
+[ext_resource path="res://Game Over Scene/O2.png" type="Texture" id=16]
+[ext_resource path="res://Game Over Scene/O3.png" type="Texture" id=17]
+[ext_resource path="res://Game Over Scene/V1.png" type="Texture" id=18]
+[ext_resource path="res://Game Over Scene/V2.png" type="Texture" id=19]
+[ext_resource path="res://Game Over Scene/V3.png" type="Texture" id=20]
+[ext_resource path="res://Game Over Scene/E21.png" type="Texture" id=21]
+[ext_resource path="res://Game Over Scene/E22.png" type="Texture" id=22]
+[ext_resource path="res://Game Over Scene/E23.png" type="Texture" id=23]
+[ext_resource path="res://Game Over Scene/R1.png" type="Texture" id=24]
+[ext_resource path="res://Game Over Scene/R2.png" type="Texture" id=25]
+[ext_resource path="res://Game Over Scene/R3.png" type="Texture" id=26]
+
+[sub_resource type="SpriteFrames" id=1]
+
+animations = [ { "frames":[ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ) ], "loop":true, "name":"default", "speed":5.0 } ]
+
+[sub_resource type="SpriteFrames" id=2]
+
+animations = [ { "frames":[ ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ) ], "loop":true, "name":"default", "speed":5.0 } ]
+
+[sub_resource type="SpriteFrames" id=3]
+
+animations = [ { "frames":[ ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ) ], "loop":true, "name":"default", "speed":5.0 } ]
+
+[sub_resource type="SpriteFrames" id=4]
+
+animations = [ { "frames":[ ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ) ], "loop":true, "name":"default", "speed":5.0 } ]
+
+[sub_resource type="SpriteFrames" id=5]
+
+animations = [ { "frames":[ ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ) ], "loop":true, "name":"default", "speed":5.0 } ]
+
+[sub_resource type="SpriteFrames" id=6]
+
+animations = [ { "frames":[ ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ) ], "loop":true, "name":"default", "speed":5.0 } ]
+
+[sub_resource type="SpriteFrames" id=7]
+
+animations = [ { "frames":[ ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ) ], "loop":true, "name":"default", "speed":5.0 } ]
+
+[sub_resource type="SpriteFrames" id=8]
+
+animations = [ { "frames":[ ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ) ], "loop":true, "name":"default", "speed":5.0 } ]
+
+[node name="Node2D" type="Node2D"]
+
+transform/pos = Vector2( 480, 360 )
+script/script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+
+texture = ExtResource( 2 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+
+transform/pos = Vector2( -295.896, -251.881 )
+transform/scale = Vector2( 0.75, 0.75 )
+frames = SubResource( 1 )
+animation = "default"
+playing = true
+
+[node name="AnimatedSprite 2" type="AnimatedSprite" parent="."]
+
+transform/pos = Vector2( -287.077, -71.7691 )
+transform/scale = Vector2( 0.75, 0.75 )
+frames = SubResource( 2 )
+animation = "default"
+playing = true
+
+[node name="AnimatedSprite 3" type="AnimatedSprite" parent="."]
+
+transform/pos = Vector2( -299.38, 75.8702 )
+transform/scale = Vector2( 0.75, 0.75 )
+frames = SubResource( 3 )
+animation = "default"
+playing = true
+
+[node name="AnimatedSprite 4" type="AnimatedSprite" parent="."]
+
+transform/pos = Vector2( -309.633, 244.015 )
+transform/scale = Vector2( 0.75, 0.75 )
+frames = SubResource( 4 )
+animation = "default"
+frame = 1
+playing = true
+
+[node name="AnimatedSprite 5" type="AnimatedSprite" parent="."]
+
+transform/pos = Vector2( 258.369, -254.268 )
+transform/scale = Vector2( 0.6, 0.6 )
+frames = SubResource( 5 )
+animation = "default"
+frame = 2
+playing = true
+
+[node name="AnimatedSprite 6" type="AnimatedSprite" parent="."]
+
+transform/pos = Vector2( 250.167, -73.8196 )
+transform/scale = Vector2( 0.6, 0.6 )
+frames = SubResource( 6 )
+animation = "default"
+frame = 1
+playing = true
+
+[node name="AnimatedSprite 7" type="AnimatedSprite" parent="."]
+
+transform/pos = Vector2( 250.167, 102.527 )
+transform/scale = Vector2( 0.6, 0.6 )
+frames = SubResource( 7 )
+animation = "default"
+frame = 1
+playing = true
+
+[node name="AnimatedSprite 8" type="AnimatedSprite" parent="."]
+
+transform/pos = Vector2( 256.318, 270.672 )
+transform/scale = Vector2( 0.6, 0.6 )
+frames = SubResource( 8 )
+animation = "default"
+frame = 2
+playing = true
+
+
